@@ -48,7 +48,11 @@ public class HttpResponse {
                             int contentLength = inputStream.available();
                             if(responseFileURI.getPath().endsWith("html")) {
                                 setHeaders(ResponseStatus._200, "text/html", contentLength);
-                            } else {
+                            }
+                            else if(responseFileURI.getPath().endsWith("css")){
+                                setHeaders(ResponseStatus._200, "text/css", contentLength);
+                            }
+                            else {
                                 setHeaders(ResponseStatus._200, "text", contentLength);
                             }
                         } else {

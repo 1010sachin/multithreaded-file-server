@@ -33,7 +33,7 @@ Open a web-browser, of your choice and navigate to the link http://localhost:809
 
 ### Monitoring
 
-As stated earlier, this application also records run time metrics and provided them on a prometheus compatible endpoint.
+As stated earlier, this application also records run time metrics and provide them on a prometheus compatible endpoint.
 In order to view the metrics go to the link http://localhost:8090/metrics.
 
 An example of the metrics collected:
